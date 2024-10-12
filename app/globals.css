@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -85,21 +87,10 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'VT323', monospace;
   }
 
-  @font-face {
-    font-family: "geist";
-    font-style: normal;
-    font-weight: 100 900;
-    src: url(/fonts/geist.woff2) format("woff2");
-  }
-
-  @font-face {
-    font-family: "geist-mono";
-    font-style: normal;
-    font-weight: 100 900;
-    src: url(/fonts/geist-mono.woff2) format("woff2");
-  }
+  /* Remove or comment out the existing @font-face rules for geist and geist-mono */
 }
 
 .skeleton {
@@ -115,4 +106,10 @@
   .skeleton-div {
     @apply bg-foreground/20 animate-pulse;
   }
+}
+.simple-glow {
+  color: #fff;
+  font-size: 80px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #fff;
 }
